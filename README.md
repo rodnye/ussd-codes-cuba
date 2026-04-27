@@ -7,7 +7,7 @@ No necesitas tener saldo de datos ni la aplicación Transfermóvil instalada.
 
 > [!warning]
 > Los códigos pueden cambiar por parte de los bancos o ETECSA.  
-> Si encuentras errores o faltantes, contribuye en la sección **[Contribuciones](#contribuciones)**.
+> Si encuentras errores o faltantes, contribuye en la sección **[Contribuciones](#-contribuciones)**.
 
 ## 📑 Índice
 
