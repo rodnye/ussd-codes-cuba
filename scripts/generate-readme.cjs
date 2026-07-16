@@ -20,27 +20,25 @@ ussdData.forEach((item) => {
 
 // Helper: generate ID from text
 function idFrom(text) {
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
+  return text.toLowerCase().replace(/[^a-z0-9À-ÿ]/g, "-");
 }
 
 let md = "";
 
 // --- Index ---
-md += "## Indice\n\n";
+md += "## Índice\n\n";
 for (const group of Object.keys(groups)) {
   const groupId = idFrom(group);
   md += `- [${group}](#${groupId})\n`;
   const banks = groups[group];
+
   for (const bank of Object.keys(banks)) {
     if (bank !== "null") {
       const bankId = idFrom(bank);
       md += `  - [${bank}](#${bankId})\n`;
       const subgroups = banks[bank];
       for (const subgroup of Object.keys(subgroups)) {
-        const subId = idFrom(`${bank}-${subgroup}`);
+        const subId = idFrom(`${bank} ->${subgroup}`);
         md += `    - [${subgroup}](#${subId})\n`;
       }
     } else {
@@ -56,17 +54,14 @@ md += "\n";
 
 // --- Sections ---
 for (const group of Object.keys(groups)) {
-  const groupId = idFrom(group);
-  md += `## ${group} {#${groupId}}\n\n`;
+  md += `## ${group}\n\n`;
   const banks = groups[group];
   for (const bank of Object.keys(banks)) {
     if (bank !== "null") {
-      const bankId = idFrom(bank);
-      md += `### ${bank} {#${bankId}}\n\n`;
+      md += `### ${bank}\n\n`;
       const subgroups = banks[bank];
       for (const subgroup of Object.keys(subgroups)) {
-        const subId = idFrom(`${bank}-${subgroup}`);
-        md += `#### ${subgroup} {#${subId}}\n\n`;
+        md += `#### ${bank} -> ${subgroup}\n\n`;
         md += "| Nombre | Código | Descripción |\n";
         md += "|--------|--------|-------------|\n";
         subgroups[subgroup].forEach((code) => {
