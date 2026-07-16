@@ -58,7 +58,7 @@ for (const group of Object.keys(groups)) {
   const banks = groups[group];
   for (const bank of Object.keys(banks)) {
     if (bank !== "null") {
-      md += `### ${bank}\n\n`;
+      md += `### 🏦 ${bank}\n\n`;
       const subgroups = banks[bank];
       for (const subgroup of Object.keys(subgroups)) {
         md += `#### ${bank} -> ${subgroup}\n\n`;
@@ -75,8 +75,7 @@ for (const group of Object.keys(groups)) {
     } else {
       const subgroups = banks[bank];
       for (const subgroup of Object.keys(subgroups)) {
-        const subId = idFrom(subgroup);
-        md += `### ${subgroup} {#${subId}}\n\n`;
+        md += `### 📡 ${subgroup}\n\n`;
         md += "| Nombre | Código | Descripción |\n";
         md += "|--------|--------|-------------|\n";
         subgroups[subgroup].forEach((code) => {
