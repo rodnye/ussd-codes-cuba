@@ -2,6 +2,8 @@
 
 > **Transfermóvil · ETECSA · Telefonía fija y móvil**
 
+🌐 **[Ver página web interactiva](https://rodnye.github.io/ussd-codes-cuba/)** - Busca, filtra y exporta códigos USSD como contactos directamente a tu teléfono.
+
 Esta guía reúne los códigos USSD más útiles para operar en Cuba desde cualquier teléfono móvil (Android, iOS o dispositivos no inteligentes).  
 No necesitas tener saldo de datos ni la aplicación Transfermóvil instalada.
 
@@ -156,12 +158,12 @@ No necesitas tener saldo de datos ni la aplicación Transfermóvil instalada.
 
 ### 📡 Recargas de saldo
 
-| Nombre                              | Código                    | Descripción                                                                         |
-| ----------------------------------- | ------------------------- | ----------------------------------------------------------------------------------- |
-| Recarga con tarjeta de cupón        | `*666`                    | Marcar *666 y seguir instrucciones                                                  |
-| Recarga rápida con cupón            | `*662*código de recarga#` | Recarga rápida con cupón, ejemplo *662*123456789012#                                |
-| Transferencia de saldo entre líneas | `*234#`                   | Transferencia de saldo entre líneas, menú o directamente *234*1*número*clave*monto# |
-| Adelanto de saldo                   | `*222*233#`               | Adelanto de saldo, opción 3 en *234# o *222*233#                                    |
+| Nombre                              | Código                    | Descripción                                                                          |
+| ----------------------------------- | ------------------------- | ------------------------------------------------------------------------------------ |
+| Recarga con tarjeta de cupón        | `*666`                    | Marcar \*666 y seguir instrucciones                                                  |
+| Recarga rápida con cupón            | `*662*código de recarga#` | Recarga rápida con cupón, ejemplo *662*123456789012#                                 |
+| Transferencia de saldo entre líneas | `*234#`                   | Transferencia de saldo entre líneas, menú o directamente *234*1*número*clave\*monto# |
+| Adelanto de saldo                   | `*222*233#`               | Adelanto de saldo, opción 3 en *234# o *222\*233#                                    |
 
 ### 📡 Planes y bolsas
 
