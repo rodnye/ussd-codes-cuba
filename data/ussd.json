@@ -133,7 +133,8 @@
       {
         "name": "Registrarse",
         "description": "Registrarse en Transfermóvil con tarjeta Telebanca",
-        "code": "*444*49*03*número de tarjeta Telebanca#"
+        "code": "*444*49*03*número de tarjeta Telebanca#",
+        "vcf": false
       },
       {
         "name": "Cambio de límites",
@@ -185,7 +186,8 @@
       {
         "name": "Registrar",
         "description": "Registrarse en Transfermóvil con PAN",
-        "code": "*444*49*02*PAN#"
+        "code": "*444*49*02*PAN#",
+        "vcf": false
       },
       {
         "name": "Autenticarse",
@@ -243,7 +245,8 @@
       {
         "name": "Consulta ONAT",
         "description": "Consultar ONAT",
-        "code": "*444*56*RC05#"
+        "code": "*444*56*RC05#",
+        "vcf": false
       }
     ]
   },
@@ -370,7 +373,8 @@
       {
         "name": "Recarga rápida con cupón",
         "description": "Recarga rápida con cupón, ejemplo *662*123456789012#",
-        "code": "*662*código de recarga#"
+        "code": "*662*código de recarga#",
+        "vcf": false
       },
       {
         "name": "Transferencia de saldo entre líneas",
@@ -480,12 +484,14 @@
       {
         "name": "Ocultar número",
         "description": "Ocultar mi número para una llamada, marcar antes del número",
-        "code": "#31#numero"
+        "code": "#31#numero",
+        "vcf": false
       },
       {
         "name": "Desactivar ocultamiento",
         "description": "Desactivar ocultamiento permanente (mostrar ID)",
-        "code": "*31#"
+        "code": "*31#",
+        "vcf": false
       }
     ]
   },
@@ -496,12 +502,14 @@
       {
         "name": "Activar desvío",
         "description": "Activar desvío de todas las llamadas a otro número",
-        "code": "*21*número#"
+        "code": "*21*número#",
+        "vcf": false
       },
       {
         "name": "Cancelar desvíos",
         "description": "Cancelar todos los desvíos",
-        "code": "#21#"
+        "code": "#21#",
+        "vcf": false
       }
     ]
   },
