@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - "data/ussd.json"
+      - "scripts/generate-readme.cjs"
+      - ".github/workflows/update-readme.yml"
     branches:
       - main
   workflow_dispatch:
