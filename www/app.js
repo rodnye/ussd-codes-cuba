@@ -5,6 +5,7 @@ document.addEventListener("alpine:init", () => {
     cart: [],
     prefix: "USSD - ",
     loading: true,
+    allExpanded: false,
 
     async init() {
       try {
@@ -56,6 +57,26 @@ document.addEventListener("alpine:init", () => {
       return this.cart.some(
         (c) => c.code === code.code && c.name === code.name,
       );
+    },
+
+    toggleAll() {
+      const collapses = document.querySelectorAll(
+        "#ussdAccordion .accordion-collapse",
+      );
+      if (collapses.length === 0) return;
+
+      this.allExpanded = !this.allExpanded;
+
+      collapses.forEach((el) => {
+        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(el, {
+          toggle: false,
+        });
+        if (this.allExpanded) {
+          bsCollapse.show();
+        } else {
+          bsCollapse.hide();
+        }
+      });
     },
 
     downloadVcf() {

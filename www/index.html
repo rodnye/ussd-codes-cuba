@@ -16,21 +16,105 @@
   </head>
 
   <body x-data="ussdApp">
-    <nav class="navbar navbar-dark bg-primary sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
       <div class="container">
-        <span class="navbar-brand mb-0 h1"> Codigos USSD Cuba </span>
+        <span class="navbar-brand mb-0 h1">Codigos USSD Cuba</span>
         <button
-          class="btn btn-outline-light"
+          class="navbar-toggler"
           type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#cartOffcanvas"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          Carrito (<span x-text="cart.length"></span>)
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div
+            class="d-flex flex-column flex-md-row ms-md-auto gap-2 mt-2 mt-md-0"
+          >
+            <a
+              href="https://github.com/rodnye/ussd-codes-cuba"
+              target="_blank"
+              class="btn btn-outline-light d-flex align-items-center justify-content-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="me-2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                />
+              </svg>
+              GitHub
+            </a>
+            <button
+              class="btn btn-outline-light d-flex align-items-center justify-content-center"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#cartOffcanvas"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person-lines-fill me-2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"
+                />
+              </svg>
+              Carrito (<span x-text="cart.length"></span>)
+            </button>
+          </div>
+        </div>
       </div>
     </nav>
 
     <main class="container mt-4">
+      <div class="alert alert-info shadow-sm">
+        <h4 class="alert-heading">¿Qué son los códigos USSD?</h4>
+        <p class="mb-2">
+          Los códigos USSD (Unstructured Supplementary Service Data) son códigos
+          numéricos (como <code>*222#</code> para consultar saldo) que te
+          permiten interactuar con los servicios de tu operador móvil (ETECSA en
+          este caso), bancos (Banco Metropolitano) y entidades sin necesidad de
+          conexión a internet ni aplicaciones especiales. Solo debes marcarlos
+          como si fueras a realizar una llamada normal.
+        </p>
+        <hr />
+        <h5 class="mb-2 d-flex align-items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-person-rolodex me-2"
+            viewBox="0 0 16 16"
+          >
+            <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+            <path
+              d="M1 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h.5a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h.5a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H6.707L6 1.293A1 1 0 0 0 5.293 1zm0 1h4.293L6 2.707A1 1 0 0 0 6.707 3H15v10h-.085a1.5 1.5 0 0 0-2.4-.63C11.885 11.223 10.554 10 8 10c-2.555 0-3.886 1.224-4.514 2.37a1.5 1.5 0 0 0-2.4.63H1z"
+            />
+          </svg>
+          Exportar como Contactos
+        </h5>
+        <p class="mb-0">
+          Para usar estos códigos de forma más sencilla en tu día a día, puedes
+          exportarlos directamente a tu agenda de contactos. Simplemente haz
+          clic en <strong>"Agregar"</strong> en los códigos que quieras guardar,
+          abre el carrito (botón arriba a la derecha) y descárgalos en un
+          archivo <code>.vcf</code> para importarlos a tu teléfono.
+        </p>
+      </div>
+
       <div class="mb-4">
         <input
           type="text"
@@ -46,54 +130,81 @@
         </div>
       </div>
 
-      <div class="container row">
+      <div
+        class="d-flex justify-content-end mb-3"
+        x-show="!loading && filteredData.length > 0"
+      >
+        <button class="btn btn-sm btn-outline-secondary" @click="toggleAll()">
+          <span x-text="allExpanded ? 'Colapsar todo' : 'Expandir todo'"></span>
+        </button>
+      </div>
+
+      <div class="accordion mb-4" id="ussdAccordion" x-show="!loading">
         <template
-          x-for="group in filteredData"
+          x-for="(group, index) in filteredData"
           :key="group.group + group.subgroup + (group.bank || '')"
         >
-          <div class="card mb-3 col-12 col-lg-6">
-            <div class="card-header bg-light">
-              <h5 class="mb-0">
-                <span x-text="group.group"></span>
+          <div class="accordion-item">
+            <h2 class="accordion-header" :id="'heading-' + index">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                :data-bs-target="'#collapse-' + index"
+                aria-expanded="false"
+                :aria-controls="'collapse-' + index"
+              >
+                <strong x-text="group.group"></strong>
                 <template x-if="group.bank">
-                  <span class="text-muted">
+                  <span class="ms-2 text-muted">
                     - <span x-text="group.bank"></span>
                   </span>
                 </template>
-                <span class="text-muted">
+                <span class="ms-2 text-muted">
                   / <span x-text="group.subgroup"></span>
                 </span>
-              </h5>
+              </button>
+            </h2>
+            <div
+              :id="'collapse-' + index"
+              class="accordion-collapse collapse"
+              :aria-labelledby="'heading-' + index"
+            >
+              <div class="accordion-body p-0">
+                <ul class="list-group list-group-flush">
+                  <template
+                    x-for="code in group.codes"
+                    :key="code.code + code.name"
+                  >
+                    <li class="list-group-item">
+                      <div
+                        class="d-flex flex-column flex-md-row justify-content-between align-items-start gap-2"
+                      >
+                        <div class="flex-grow-1">
+                          <strong x-text="code.name"></strong>
+                          <p
+                            class="mb-1 text-muted small"
+                            x-text="code.description"
+                          ></p>
+                          <code class="text-primary" x-text="code.code"></code>
+                        </div>
+                        <button
+                          class="btn btn-sm flex-shrink-0 w-100"
+                          :class="isInCart(code) ? 'btn-success' : (code.vcf === false ? 'btn-secondary' : 'btn-primary')"
+                          :disabled="code.vcf === false || isInCart(code)"
+                          @click="addToCart(code)"
+                          x-text="code.vcf === false ? 'Solo info' : (isInCart(code) ? 'Agregado' : 'Agregar')"
+                        ></button>
+                      </div>
+                    </li>
+                  </template>
+                </ul>
+              </div>
             </div>
-            <ul class="list-group list-group-flush">
-              <template
-                x-for="code in group.codes"
-                :key="code.code + code.name"
-              >
-                <li class="list-group-item">
-                  <div class="d-flex justify-content-between align-items-start">
-                    <div class="me-3">
-                      <strong x-text="code.name"></strong>
-                      <p
-                        class="mb-1 text-muted small"
-                        x-text="code.description"
-                      ></p>
-                      <code class="text-primary" x-text="code.code"></code>
-                    </div>
-                    <button
-                      class="btn btn-sm flex-shrink-0"
-                      :class="isInCart(code) ? 'btn-success' : (code.vcf === false ? 'btn-secondary' : 'btn-primary')"
-                      :disabled="code.vcf === false || isInCart(code)"
-                      @click="addToCart(code)"
-                      x-text="code.vcf === false ? 'Solo info' : (isInCart(code) ? 'Agregado' : 'Agregar')"
-                    ></button>
-                  </div>
-                </li>
-              </template>
-            </ul>
           </div>
         </template>
       </div>
+
       <div
         x-show="!loading && filteredData.length === 0"
         class="text-center text-muted my-5"
@@ -101,6 +212,22 @@
         <h4>No se encontraron resultados</h4>
       </div>
     </main>
+
+    <footer class="bg-light text-center text-muted py-4 mt-5 border-top">
+      <div class="container">
+        <p class="mb-1 fw-bold">Colección de Códigos USSD - Cuba</p>
+        <p class="mb-0 small">
+          <a
+            href="https://github.com/rodnye/ussd-codes-cuba"
+            class="text-muted"
+            target="_blank"
+          >
+            Ver en GitHub
+          </a>
+          · Hecho con ❤️ para la comunidad cubana
+        </p>
+      </div>
+    </footer>
 
     <div
       class="offcanvas offcanvas-end"
@@ -140,12 +267,12 @@
             <li
               class="list-group-item d-flex justify-content-between align-items-center"
             >
-              <div>
+              <div class="me-2 text-break">
                 <strong x-text="item.name"></strong>
                 <br /><code x-text="item.code"></code>
               </div>
               <button
-                class="btn btn-sm btn-outline-danger"
+                class="btn btn-sm btn-outline-danger flex-shrink-0"
                 @click="removeFromCart(index)"
               >
                 Quitar
@@ -165,6 +292,18 @@
           :disabled="cart.length === 0"
           @click="downloadVcf()"
         >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-person-lines-fill me-2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"
+            />
+          </svg>
           Descargar archivo VCF
         </button>
       </div>
