@@ -274,14 +274,14 @@
         "code": "*444*54#"
       },
       {
-        "name": "Amortizar créditos BANDEC",
-        "description": "Amortizar créditos BANDEC",
-        "code": "*444*55#"
-      },
-      {
         "name": "Cambio de límite diario",
         "description": "Cambiar límite diario",
         "code": "*444*61#"
+      },
+      {
+        "name": "Amortizar créditos BANDEC",
+        "description": "Amortizar créditos BANDEC",
+        "code": "*444*55#"
       }
     ]
   },
