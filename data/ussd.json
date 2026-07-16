@@ -1,0 +1,529 @@
+[
+  {
+    "group": "Transfermóvil",
+    "subgroup": "Sesión",
+    "bank": "BANMET",
+    "codes": [
+      {
+        "name": "Autenticarse",
+        "description": "Autenticarse en Transfermóvil",
+        "code": "*444*40*03#"
+      },
+      {
+        "name": "Desconectarse",
+        "description": "Desconectarse de Transfermóvil",
+        "code": "*444*70#"
+      }
+    ]
+  },
+  {
+    "group": "Transfermóvil",
+    "subgroup": "Consultas",
+    "bank": "BANMET",
+    "codes": [
+      { "name": "Saldo", "description": "Consultar saldo", "code": "*444*46#" },
+      {
+        "name": "Servicio",
+        "description": "Consultar servicio",
+        "code": "*444*47#"
+      },
+      { "name": "ONAT", "description": "Consultar ONAT", "code": "*444*56#" },
+      {
+        "name": "ONAT Anual",
+        "description": "Consultar ONAT anual",
+        "code": "*444*57#"
+      },
+      {
+        "name": "Últimas operaciones",
+        "description": "Consultar últimas operaciones",
+        "code": "*444*48#"
+      },
+      {
+        "name": "Límites",
+        "description": "Consultar límites",
+        "code": "*444*62#"
+      },
+      {
+        "name": "Todas las cuentas",
+        "description": "Consultar todas las cuentas",
+        "code": "*444*58#"
+      },
+      {
+        "name": "Giro postal",
+        "description": "Consultar giro postal",
+        "code": "*444*65#"
+      },
+      {
+        "name": "Localizar transferencia",
+        "description": "Localizar transferencia",
+        "code": "*444*73#"
+      },
+      {
+        "name": "Tipo de cambio",
+        "description": "Consultar tipo de cambio",
+        "code": "*444*85#"
+      }
+    ]
+  },
+  {
+    "group": "Transfermóvil",
+    "subgroup": "Operaciones",
+    "bank": "BANMET",
+    "codes": [
+      {
+        "name": "Transferir efectivo",
+        "description": "Transferir efectivo",
+        "code": "*444*45#"
+      },
+      {
+        "name": "Pagar teléfono",
+        "description": "Pagar teléfono",
+        "code": "*444*42#"
+      },
+      {
+        "name": "Electricidad",
+        "description": "Pagar electricidad",
+        "code": "*444*41#"
+      },
+      { "name": "Agua", "description": "Pagar agua", "code": "*444*51#" },
+      { "name": "Gas", "description": "Pagar gas", "code": "*444*67#" },
+      { "name": "Pago ONAT", "description": "Pagar ONAT", "code": "*444*43#" },
+      {
+        "name": "Recarga saldo móvil (propio)",
+        "description": "Recargar saldo móvil propio",
+        "code": "*444*54#"
+      },
+      {
+        "name": "Giro postal",
+        "description": "Realizar giro postal",
+        "code": "*444*64#"
+      },
+      {
+        "name": "Recarga Nauta",
+        "description": "Recargar Nauta",
+        "code": "*444*59#"
+      },
+      {
+        "name": "Pagar cuota Nauta Hogar",
+        "description": "Pagar cuota de Nauta Hogar",
+        "code": "*444*84#"
+      },
+      {
+        "name": "Pago deuda Nauta Hogar",
+        "description": "Pagar deuda de Nauta Hogar",
+        "code": "*444*86#"
+      },
+      {
+        "name": "Recarga tarjeta propia",
+        "description": "Recargar tarjeta propia",
+        "code": "*444*77#"
+      },
+      {
+        "name": "Recarga cuentas Joven Club",
+        "description": "Recargar cuentas de Joven Club",
+        "code": "*444*93#"
+      }
+    ]
+  },
+  {
+    "group": "Transfermóvil",
+    "subgroup": "Configuración",
+    "bank": "BANMET",
+    "codes": [
+      {
+        "name": "Registrarse",
+        "description": "Registrarse en Transfermóvil con tarjeta Telebanca",
+        "code": "*444*49*03*número de tarjeta Telebanca#"
+      },
+      {
+        "name": "Cambio de límites",
+        "description": "Cambiar límites",
+        "code": "*444*61#"
+      },
+      {
+        "name": "Eliminar registro",
+        "description": "Eliminar registro",
+        "code": "*444*68*03#"
+      },
+      {
+        "name": "Cambio de PIN",
+        "description": "Cambiar PIN",
+        "code": "*444*69#"
+      },
+      {
+        "name": "Asociar cuenta",
+        "description": "Asociar cuenta",
+        "code": "*444*60#"
+      },
+      {
+        "name": "Actualizar cuenta",
+        "description": "Actualizar cuenta",
+        "code": "*444*53#"
+      },
+      {
+        "name": "Reimpresión de tarjetas",
+        "description": "Reimpresión de tarjetas",
+        "code": "*444*74#"
+      },
+      {
+        "name": "PIN digital",
+        "description": "PIN digital",
+        "code": "*444*79#"
+      },
+      {
+        "name": "Apertura cuenta MLC",
+        "description": "Apertura cuenta MLC",
+        "code": "*444*76#"
+      }
+    ]
+  },
+  {
+    "group": "Transfermóvil",
+    "subgroup": "Sesión",
+    "bank": "BANDEC",
+    "codes": [
+      {
+        "name": "Registrar",
+        "description": "Registrarse en Transfermóvil con PAN",
+        "code": "*444*49*02*PAN#"
+      },
+      {
+        "name": "Autenticarse",
+        "description": "Autenticarse en Transfermóvil",
+        "code": "*444*40*02#"
+      },
+      {
+        "name": "Cerrar sesión",
+        "description": "Cerrar sesión",
+        "code": "*444*70#"
+      },
+      {
+        "name": "Cambio de PIN",
+        "description": "Cambiar PIN",
+        "code": "*444*69#"
+      },
+      {
+        "name": "Eliminar registro",
+        "description": "Eliminar registro",
+        "code": "*444*68*02#"
+      }
+    ]
+  },
+  {
+    "group": "Transfermóvil",
+    "subgroup": "Consultas",
+    "bank": "BANDEC",
+    "codes": [
+      { "name": "Saldo", "description": "Consultar saldo", "code": "*444*46#" },
+      {
+        "name": "Servicio",
+        "description": "Consultar servicio",
+        "code": "*444*47#"
+      },
+      {
+        "name": "Todas las cuentas",
+        "description": "Consultar todas las cuentas",
+        "code": "*444*58#"
+      },
+      {
+        "name": "Límite de tarjeta",
+        "description": "Consultar límite de tarjeta",
+        "code": "*444*62#"
+      },
+      {
+        "name": "Últimas operaciones",
+        "description": "Consultar últimas operaciones",
+        "code": "*444*48#"
+      },
+      {
+        "name": "Últimos pagos",
+        "description": "Consultar últimos pagos",
+        "code": "*444*63#"
+      },
+      {
+        "name": "Consulta ONAT",
+        "description": "Consultar ONAT",
+        "code": "*444*56*RC05#"
+      }
+    ]
+  },
+  {
+    "group": "Transfermóvil",
+    "subgroup": "Operaciones",
+    "bank": "BANDEC",
+    "codes": [
+      {
+        "name": "Transferencia",
+        "description": "Realizar transferencia",
+        "code": "*444*45#"
+      },
+      {
+        "name": "Pago electricidad",
+        "description": "Pagar electricidad",
+        "code": "*444*41#"
+      },
+      {
+        "name": "Pago teléfono",
+        "description": "Pagar teléfono",
+        "code": "*444*42#"
+      },
+      { "name": "Pago ONAT", "description": "Pagar ONAT", "code": "*444*43#" },
+      {
+        "name": "Recarga saldo móvil",
+        "description": "Recargar saldo móvil",
+        "code": "*444*54#"
+      },
+      {
+        "name": "Amortizar créditos BANDEC",
+        "description": "Amortizar créditos BANDEC",
+        "code": "*444*55#"
+      },
+      {
+        "name": "Cambio de límite diario",
+        "description": "Cambiar límite diario",
+        "code": "*444*61#"
+      }
+    ]
+  },
+  {
+    "group": "Transfermóvil",
+    "subgroup": "Facturas",
+    "bank": "BANDEC",
+    "codes": [
+      {
+        "name": "Facturas",
+        "description": "Adicionar, consultar, pagar o eliminar factura",
+        "code": "*444*52#"
+      }
+    ]
+  },
+  {
+    "group": "ETECSA",
+    "subgroup": "Consultas de saldo y bonos",
+    "codes": [
+      {
+        "name": "Saldo y vigencia",
+        "description": "Saldo principal, voz, SMS, datos y vigencia",
+        "code": "*222#"
+      },
+      {
+        "name": "Límite de recarga",
+        "description": "Consultar cuánto puedes recargar en el mes (límite 360 CUP) y cuándo puedes la próxima",
+        "code": "*222*732#"
+      },
+      {
+        "name": "Bono de recargas",
+        "description": "Consultar bono de recargas en promoción (también para bonos y planes en USD)",
+        "code": "*222*266#"
+      },
+      {
+        "name": "Paquete de datos comprado",
+        "description": "Consultar paquete de datos comprado (sin bono)",
+        "code": "*222*328#"
+      },
+      {
+        "name": "Crédito plan de voz",
+        "description": "Crédito del plan de voz (si lo compraste)",
+        "code": "*222*869#"
+      },
+      {
+        "name": "Crédito plan de SMS",
+        "description": "Crédito del plan de SMS (si lo compraste)",
+        "code": "*222*767#"
+      },
+      {
+        "name": "Saldo telefonía fija",
+        "description": "Consultar saldo de telefonía fija",
+        "code": "*118#"
+      },
+      {
+        "name": "Tarifa diferenciada",
+        "description": "Saber si tu línea tiene tarifa diferenciada (te llega un SMS)",
+        "code": "*111*6#"
+      },
+      {
+        "name": "MB Cubacel",
+        "description": "Consultar megas disponibles",
+        "code": "*222*887#"
+      },
+      {
+        "name": "Plan Amigos",
+        "description": "Consultar el estado del Plan Amigos",
+        "code": "*222*264#"
+      },
+      {
+        "name": "Bolsa de correo Nauta",
+        "description": "Estado del paquete de bolsa de correo Nauta",
+        "code": "*222*328#"
+      }
+    ]
+  },
+  {
+    "group": "ETECSA",
+    "subgroup": "Recargas de saldo",
+    "codes": [
+      {
+        "name": "Recarga con tarjeta de cupón",
+        "description": "Marcar *666 y seguir instrucciones",
+        "code": "*666"
+      },
+      {
+        "name": "Recarga rápida con cupón",
+        "description": "Recarga rápida con cupón, ejemplo *662*123456789012#",
+        "code": "*662*código de recarga#"
+      },
+      {
+        "name": "Transferencia de saldo entre líneas",
+        "description": "Transferencia de saldo entre líneas, menú o directamente *234*1*número*clave*monto#",
+        "code": "*234#"
+      },
+      {
+        "name": "Adelanto de saldo",
+        "description": "Adelanto de saldo, opción 3 en *234# o *222*233#",
+        "code": "*222*233#"
+      }
+    ]
+  },
+  {
+    "group": "ETECSA",
+    "subgroup": "Planes y bolsas",
+    "codes": [
+      {
+        "name": "Comprar servicios",
+        "description": "Comprar servicios (datos, SMS, voz, Plan Amigos) menú interactivo",
+        "code": "*133#"
+      },
+      {
+        "name": "Estado plan de voz",
+        "description": "Consultar estado del plan de voz",
+        "code": "*222*869#"
+      },
+      {
+        "name": "Estado plan de SMS",
+        "description": "Consultar estado del plan de SMS",
+        "code": "*222*767#"
+      },
+      {
+        "name": "Estado Plan Amigos",
+        "description": "Consultar estado del Plan Amigos",
+        "code": "*222*264#"
+      }
+    ]
+  },
+  {
+    "group": "ETECSA",
+    "subgroup": "Internet en el móvil",
+    "codes": [
+      {
+        "name": "Activar plan de datos",
+        "description": "Activar plan de datos, opción de datos en menú",
+        "code": "*133#"
+      },
+      {
+        "name": "Validación datos móviles",
+        "description": "Saber si tu línea está validada para datos móviles en Cuba",
+        "code": "*222*468#"
+      },
+      {
+        "name": "Estado paquete de datos",
+        "description": "Consultar estado del paquete de datos",
+        "code": "*222*328#"
+      }
+    ]
+  },
+  {
+    "group": "ETECSA",
+    "subgroup": "Otros servicios móviles",
+    "codes": [
+      {
+        "name": "Atención telefónica",
+        "description": "Atención telefónica (ETECSA)",
+        "code": "*2266"
+      },
+      {
+        "name": "Buzón de voz",
+        "description": "Acceder al buzón de voz y seguir instrucciones",
+        "code": "*123"
+      },
+      {
+        "name": "Buzón de voz directo",
+        "description": "Buzón de voz directo",
+        "code": "*80"
+      },
+      {
+        "name": "Centro de servicio SMS",
+        "description": "Centro de servicio de SMS (SMSC)",
+        "code": "+5372640004"
+      },
+      {
+        "name": "Código de red",
+        "description": "Código de red (información de Cubacel)",
+        "code": "36801"
+      }
+    ]
+  },
+  {
+    "group": "General",
+    "subgroup": "Identificador del equipo",
+    "codes": [
+      {
+        "name": "IMEI",
+        "description": "Mostrar el IMEI del teléfono",
+        "code": "*#06#"
+      }
+    ]
+  },
+  {
+    "group": "General",
+    "subgroup": "Llamadas anónimas",
+    "codes": [
+      {
+        "name": "Ocultar número",
+        "description": "Ocultar mi número para una llamada, marcar antes del número",
+        "code": "#31#numero"
+      },
+      {
+        "name": "Desactivar ocultamiento",
+        "description": "Desactivar ocultamiento permanente (mostrar ID)",
+        "code": "*31#"
+      }
+    ]
+  },
+  {
+    "group": "General",
+    "subgroup": "Desvío de llamadas",
+    "codes": [
+      {
+        "name": "Activar desvío",
+        "description": "Activar desvío de todas las llamadas a otro número",
+        "code": "*21*número#"
+      },
+      {
+        "name": "Cancelar desvíos",
+        "description": "Cancelar todos los desvíos",
+        "code": "#21#"
+      }
+    ]
+  },
+  {
+    "group": "General",
+    "subgroup": "Restricción de llamadas",
+    "codes": [
+      {
+        "name": "Cancelar todos los bloqueos",
+        "description": "Cancelar todos los bloqueos (entrantes y salientes) con clave 0000",
+        "code": "#330*0000#"
+      },
+      {
+        "name": "Cancelar bloqueo entrantes",
+        "description": "Cancelar bloqueo de llamadas entrantes con clave 0000",
+        "code": "#35*0000#"
+      },
+      {
+        "name": "Cancelar bloqueo salientes",
+        "description": "Cancelar bloqueo de llamadas salientes con clave 0000",
+        "code": "#33*0000#"
+      }
+    ]
+  }
+]
